@@ -1,14 +1,19 @@
 import React from "react";
-import Gridimage from "/src/assets/photo-grid.png"
+import gridBanner from "/src/assets/images/grid-banner.png";
 
-export default function Hero() {
-    return (
-        <>
-            <section className="hero">
-                <img src={Gridimage} alt="photo-grid" className="hero-image"/>
-                <h1 className="hero-heading">Online Experiences</h1>
-                <p className="hero-text">Join unique interactive activities led by one of a kind hosts all without leaving home.</p>
-            </section>
-        </>
-    )
-}
+const Hero = () => (
+  <>
+    <section className="hero">
+      <img src={gridBanner} alt="Grid banner" className="hero-image" />
+      <h2 className="hero-title">
+        <span>Remote</span> Experiences
+      </h2>
+      <p className="hero-text">
+        Join unique interactive activities led by one of a kind hosts all
+        without leaving home.
+      </p>
+    </section>
+  </>
+);
+
+export default Hero;

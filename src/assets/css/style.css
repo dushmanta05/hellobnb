@@ -1,52 +1,81 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
   font-family: Poppins, sans-serif;
 }
 
 nav {
-  height: 70px;
+  height: 80px;
   display: flex;
-  padding: 13px 20px;
-  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 3px 7.5px rgba(0, 0, 0, 0.1);
 }
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .nav-logo {
   max-height: 50px;
 }
 
-section {
-  padding: 20px 20px 0px 20px;
-  
+.nav-text {
+  margin-left: 15px;
+  color: #ff5a5f;
+  font-size: 35px;
+  font-weight: 800;
 }
+
+section {
+  margin: 20px 20px 20px 20px;
+}
+
 .bold {
   font-weight: bold;
 }
+
 .hero {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
 .hero-image {
-  max-height: 400px;
   align-self: center;
 }
-.hero-heading {
+
+.hero-title {
+  margin-top: 15px;
   margin-bottom: 5px;
   font-weight: 600;
-  font-size: 35px;
+  font-size: 30px;
   color: #000000;
 }
+
+.hero-title span {
+  color: #ff5a5f;
+}
+
 .hero-text {
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 300;
-  font-size: 25px;
+  font-size: 20px;
   color: #222222;
 }
+
 .cards-list {
   display: flex;
+  justify-content: center;
   flex-wrap: nowrap;
   gap: auto;
   overflow-x: auto;
@@ -61,16 +90,18 @@ section {
   flex-direction: column;
   position: relative;
 }
+
 .card-badge {
   position: absolute;
-  top: 3px;
-  left: 3px;
+  top: 10px;
+  left: 10px;
   font-size: 12px;
   background-color: white;
-  padding: 2px 3px;
-  border-radius: 2px;
+  padding: 4px 6px;
+  border-radius: 5px;
   font-weight: bold;
 }
+
 .card-stats {
   display: flex;
   flex-direction: row;
@@ -86,16 +117,20 @@ section {
 
 .card-star {
   height: 12px;
+  margin-right: 3px;
 }
-.color-grey {
-  color: #918E9B;;
+
+.color-gray {
+  color: #918e9b;
 }
+
 .card-title {
   overflow: hidden;
   text-overflow: ellipsis;
   margin-top: 4px;
   margin-bottom: 0;
 }
+
 .card-price {
   margin-top: 4px;
   font-size: 12px;

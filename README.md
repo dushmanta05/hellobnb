@@ -1,2 +1,3 @@
-# airbnb-experience-clone
-## An Airbnb Experience clone made with ReactJS
+# Hellobnb
+
+## An Airbnb clone developed with ReactJS
